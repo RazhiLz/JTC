@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Altura menos a altura do cabeçalho */
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    text-align: center;
+    height: 600px;
+    width: 500px;
+}
+
+.profile-header {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: #ffffff;
+    padding: 60px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-body {
+    padding: 20px;
+}
+
+.profile-body h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.profile-body p {
+    font-size: 16px;
+    color: #666;
+
+}
+
+button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+/* Estilo do rodapé */
+.profile-footer {
+    background-color: #eeeeee;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #c1b9b9;
+}

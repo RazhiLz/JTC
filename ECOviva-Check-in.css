@@ -1,0 +1,108 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estiliza o cabeçalho e a navegação */
+.header {
+    background: linear-gradient(90deg, rgba(202,253,195,1) 6%, rgba(67,255,161,1) 61%, rgba(0,255,102,1) 100%);
+    padding: 40px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    position: relative;
+    top: 20px; /* Ajuste a posição vertical do título */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do círculo */
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #e0f7fa;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    top: 75px;
+    margin-left: auto; /* Centraliza o círculo */
+    margin-right: 20px; /* Espaçamento da direita */
+}
+
+/* Estilo das ondas */
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200%;
+    height: 60%;
+    background-color: rgba(0, 188, 212, 0.8);
+    border-radius: 40%;
+    animation: wave 6s infinite linear;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Segunda onda com delay e menor opacidade */
+.circle::after {
+    opacity: 0.6;
+    background-color: rgba(0, 188, 212, 0.6);
+    animation-delay: -3s;
+}
+
+/* Animação de ondas mais complexa */
+@keyframes wave {
+    0% {
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+    25% {
+        transform: translateX(-50%) translateY(-10px) scale(1.05);
+    }
+    50% {
+        transform: translateX(-50%) translateY(0) scale(1.1);
+    }
+    75% {
+        transform: translateX(-50%) translateY(-5px) scale(1.05);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}

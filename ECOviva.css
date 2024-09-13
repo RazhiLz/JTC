@@ -1,0 +1,376 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-height: 480vh;
+    background: linear-gradient(90deg, rgba(202,253,195,1) 6%, rgba(67,255,161,1) 61%, rgba(0,255,102,1) 100%);;
+    
+}
+
+
+/* Estiliza o cabeçalho e a navegação */
+.header {
+    background: linear-gradient(90deg, rgba(202,253,195,1) 6%, rgba(67,255,161,1) 61%, rgba(0,255,102,1) 100%);
+    padding: 40px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 565px;
+}
+
+.logo {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    position: relative;
+    top: 123px; /* Ajuste a posição vertical do título */
+    left: -530px;
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+/* Efeito de hover */
+.nav-menu a:hover {
+    color: #01fbfb; /* Cor do texto ao passar o mouse */
+    transition: 0.5s;
+    text-shadow: #ffffff;
+}
+
+/* Estiliza o conteúdo principal */
+.main-content {
+    display: flex;
+    justify-content: flex-start; /* Alinha itens ao início do contêiner */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em múltiplas linhas se necessário */
+    height: calc(100vh - 80px); /* Desconta a altura do header */
+    padding: 80px;
+    background: #ffffff;
+    position: relative;
+    top: 270px;
+}
+
+
+/* Estiliza a seção .info */
+.info {
+    width: 50%; /* Ajuste a largura conforme necessário */
+    text-align: right; /* Alinha o texto à esquerda */
+    position: absolute; /* Remove o elemento da fluxo normal do documento */
+    right: 30px; /* Alinha a seção ao lado esquerdo do contêiner pai */
+    top: 150px; /* Ajuste conforme necessário para posicionar acima dos outros blocos */
+    padding: 20px; /* Adicione padding se necessário */
+    font-size: large;
+    box-shadow: 0 4px 8px rgba(100, 207, 253, 0.758);
+    word-wrap: break-word; /* Quebra palavras longas */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.special-section {
+    width: 77%; /* Ajuste a largura conforme necessário */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative; /* Posiciona o elemento no fluxo normal do documento */
+    left: 60px; /* Mantém o alinhamento à esquerda */
+    padding: 84px; /* Adicione padding se necessário */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: large;
+    box-shadow: 0 4px 8px rgba(116, 213, 255, 0.758); /* Adiciona sombra */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Gradiente de fundo */
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Transição suave para max-height e padding */
+    border-radius: 0px;
+    margin: 50px 0;
+    top: 300px;
+}
+
+/* Estilo para a seção .project-central */
+.project-central {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 30px; /* Adiciona padding ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    background: #ffffff; /* Fundo branco para a seção */
+    box-shadow: 0 6px 12px rgba(116, 255, 181, 0.758); /* Aumenta a sombra para criar o efeito de brilho */
+    font-size: large;
+    margin-bottom: 50px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    position: relative;
+    top: 450px;
+}
+
+.project-central:hover {
+    background: #f0f8ff; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(67, 196, 252, 0.897); /* Aumenta a sombra para criar o efeito de brilho */
+    transform: scale(1.02); /* Leve aumento no tamanho para destacar o elemento */
+}
+
+/* Estilo para a seção .project-central2 */
+.project-central2 {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 30px; /* Adiciona padding ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    background: #ffffff; /* Fundo branco para a seção */
+    box-shadow: 0 6px 12px rgba(116, 255, 181, 0.758); /* Aumenta a sombra para criar o efeito de brilho */
+    font-size: large;
+    top: -40px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    position: relative;
+    top: 480px;
+}
+
+.project-central2:hover {
+    background: #f0f8ff; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(67, 196, 252, 0.897); /* Aumenta a sombra para criar o efeito de brilho */
+    transform: scale(1.02); /* Leve aumento no tamanho para destacar o elemento */
+}
+
+/* Estilo para a seção .project-central3 */
+.project-central3 {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 30px; /* Adiciona padding ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    background: #ffffff; /* Fundo branco para a seção */
+    box-shadow: 0 6px 12px rgba(116, 255, 181, 0.758); /* Aumenta a sombra para criar o efeito de brilho */
+    font-size: large;
+    margin-bottom: 100px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+    position: relative;
+    top: 500px;
+}
+
+.project-central3:hover {
+    background: #f0f8ff; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(67, 196, 252, 0.897); /* Aumenta a sombra para criar o efeito de brilho */
+    transform: scale(1.02); /* Leve aumento no tamanho para destacar o elemento */
+}
+
+.title4{
+
+    font-size: large;
+
+}
+
+.title5{
+
+    font-size: large;
+
+}
+
+.title6{
+
+    font-size: large;
+
+}
+
+/* Estiliza o rodapé */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 570px;
+}
+
+/* Contêiner para o conteúdo */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Ajusta o layout para permitir a rolagem vertical */
+    justify-content: flex-start; /* Alinha itens ao início do contêiner */
+    padding: 100px;
+    background: #ffffff;
+    position: relative;
+    min-height: 100vh; /* Garante que o conteúdo principal sempre ocupe pelo menos a altura da tela */
+}
+
+.title2 {
+
+font-size: 35px;
+
+}
+
+h3{
+
+font-size: 35px;
+
+}
+
+/* Estilo inicial para o botão */
+.more-button {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4afd74;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.9s ease;/* Transição suave para a visibilidade do botão */
+}
+
+.text-aling{
+    text-decoration: none;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+/* Estilo quando o mouse está sobre a seção */
+.special-section2:hover {
+    height: 100px; /* Altura expandida quando o mouse passa por cima */
+    padding-bottom: 60px; /* Adiciona padding para acomodar o botão */
+}
+
+.special-section2:hover .more-button {
+    display: block; /* Torna o botão visível */
+}
+
+/* Estilo inicial para a seção e título */
+.special-section2 {
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Gradiente inicial do background */
+    transition:  max-height 0.5s ease, padding 0.5s ease; /* Transição suave e lenta para max-height e padding */
+    height: 100px; /* Altura inicial */
+    top: -90px;
+    align-items: center;
+   
+}
+
+.special-section2 .title2 {
+    font-size: 36px;
+    text-align: center;
+    background: rgb(202,253,195);
+    background: linear-gradient(90deg, rgba(202,253,195,1) 6%, rgba(67,255,161,1) 61%, rgba(0,255,102,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent; /* Faz o texto transparente para mostrar o gradiente */
+    transition: color 0.9s ease; /* Transição suave para a cor do texto */
+}
+
+/* Estilo quando o mouse está sobre a seção */
+.special-section2:hover {
+    background: rgb(202,253,195);
+    background: linear-gradient(90deg, rgba(202,253,195,1) 6%, rgba(67,255,161,1) 61%, rgba(0,255,102,1) 100%);
+}
+
+.special-section2:hover .title2 {
+    background: none; /* Remove o gradiente do texto */
+    color: #fff; /* Muda a cor do texto para branco */
+}
+
+.animated-section {
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    height: 100px;
+    text-align: center;
+    top: 500px;
+}
+
+.title2 {
+    font-size: 35px;
+    transition: transform 0.9s ease; /* Transição suave para o movimento */
+    position: relative;
+    z-index: 2; /* Garante que o título esteja acima do texto */
+}
+
+.hidden-text {
+    opacity: 0;
+    transform: translateY(20px); /* Começa com o texto escondido */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: absolute;
+    top: 50%; /* Centraliza o texto verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto horizontalmente */
+    z-index: 1;
+    color:rgb(0, 0, 0);
+}
+
+.animated-section:hover .title2 {
+    transform: translateY(-40px); /* Move o título para cima */
+}
+
+.animated-section:hover .hidden-text {
+    opacity: 1;
+    transform: translate(-50%, -60%); /* Move o texto para cima e revela */
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: -530px;
+    top: -10px;
+  }
+  
+  .cards .red, .cards .blue, .cards .green {
+    background-color: #f43f5e; /* Cor de fundo padrão para os cartões */
+  }
+  
+  .cards .blue {
+    background-color: #3b82f6;
+  }
+  
+  .cards .green {
+    background-color: #22c55e;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 213px; /* Altura fixa */
+    width: 313px;  /* Largura fixa */
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 400ms, filter 400ms;
+    position: relative;
+    top: -25px;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: 0.7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+  }
